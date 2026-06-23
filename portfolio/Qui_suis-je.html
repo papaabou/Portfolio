@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Papa Abou MBAYE | Mon Parcours et Projets Personnels</title>
+    <meta name="description" content="Découvrez le parcours de Papa ABOU  MBAYE, ses études en informatique et ses projets personnels incluant des jeux Python avec PyGame">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" style="image/png" href="img/Logo.png">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#c4a484',
+                            600: '#a56931',
+                            700: '#8b5a2b',
+                            800: '#744b24',
+                            900: '#5d3c1d'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-in-left': 'slideInLeft 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s ease-in-out infinite'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2 group">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                        <img src = "./img/Logo.png" class="w-8 h-8 object-contain"/>
+                        </div>
+                        <span class="font-display font-semibold text-gray-900 hidden sm:block">Papa Abou MBAYE</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Accueil</a>
+                        <a href="index.html#competences" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Compétences</a>
+                        <a href="index.html#projets" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Projets</a>
+                        <a href="#" class="nav-link text-primary-600 px-3 py-2 text-sm font-medium">À propos</a>
+                        <a href="index.html#contact" class="nav-link text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-btn text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600 transition-colors duration-200" aria-label="Menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu md:hidden fixed top-16 right-0 w-64 h-screen bg-white shadow-xl border-l border-gray-200 hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Accueil</a>
+                <a href="index.html#competences" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Compétences</a>
+                <a href="index.html#projets" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Projets</a>
+                <a href="#" class="mobile-nav-link block px-3 py-2 text-base font-medium text-primary-600 bg-primary-50 rounded-md">À propos</a>
+                <a href="index.html#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-20 pb-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-6 leading-tight">
+                    À Propos de Moi
+                </h1>
+                <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Découvrez mon parcours académique, mes expériences et mes projets personnels!
+                </p>
+                <div class="flex justify-center">
+                    <a href="#parcours" class="inline-flex items-center px-8 py-3 bg-white text-primary-700 font-semibold rounded-full hover:bg-primary-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <span>Découvrir mon parcours</span>
+                        <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#parcours" class="text-white hover:text-primary-200 transition-colors duration-300">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-in">
+                <div class="stat-card text-center p-6 rounded-xl">
+                    <div class="text-3xl font-bold gradient-text mb-2">1</div>
+                    <div class="text-gray-600 font-medium">Années d'études sup</div>
+                </div>
+                <div class="stat-card text-center p-6 rounded-xl">
+                    <div class="text-3xl font-bold gradient-text mb-2">10+</div>
+                    <div class="text-gray-600 font-medium">Projets réalisés</div>
+                </div>
+                <div class="stat-card text-center p-6 rounded-xl">
+                    <div class="text-3xl font-bold gradient-text mb-2">5+</div>
+                    <div class="text-gray-600 font-medium">Langages maîtrisés</div>
+                </div>
+                <div class="stat-card text-center p-6 rounded-xl">
+                    <div class="text-3xl font-bold gradient-text mb-2">4</div>
+                    <div class="text-gray-600 font-medium">Langues parlées</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section id="parcours" class="section bg-gradient-to-br from-primary-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl font-display font-bold gradient-text mb-4">Mon Parcours</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    De mes études en informatique à mes projets personnels, découvrez les étapes qui ont développé mes compétences !
+                </p>
+            </div>
+            
+            <!-- Formation centrée -->
+            <div class="flex justify-center">
+                <div class="max-w-2xl w-full animate-slide-in-left">
+                    <h3 class="text-3xl font-display font-bold text-gray-900 mb-8 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-primary-600 mr-3"></i>
+                        Formation
+                    </h3>
+                    <div class="space-y-8">
+                        <div class="timeline-item">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900">BUT2 Informatique</h4>
+                                        <p class="text-primary-600 font-medium">Université Sorbonne Paris Nord - En cours</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2025-2026</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900">BUT1 Informatique</h4>
+                                        <p class="text-primary-600 font-medium">Université Sorbonne Paris Nord - Terminé</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2024-2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="glass-card p-6 rounded-xl">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="text-xl font-semibold text-gray-900">Bac STI2D option SIN</h4>
+                                        <p class="text-primary-600 font-medium">Lycée Polyvalent Jean Perrin - Terminé</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2022-2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section class="section bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Mes Projets Personnels</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4">
+                    Découvrez les projets que j'ai développés pour améliorer mes compétences
+                </p>
+                <p class="text-gray-500">
+                    Pour voir mes projets universitaires, c'est 
+                    <a href="index.html#projets" class="text-primary-600 hover:text-primary-700 font-medium underline">ici</a> !
+                </p>
+            </div>
+            
+            <!-- Projet centré -->
+            <div class="flex justify-center">
+                <div class="max-w-2xl w-full">
+                    <!-- Snake Game -->
+                    <div class="project-card bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 animate-slide-up">
+                        <div class="aspect-video bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-gamepad text-6xl text-green-600"></i>
+                            <!-- Animated elements -->
+                            <div class="absolute top-4 left-4 w-4 h-4 bg-green-500 rounded animate-bounce"></div>
+                            <div class="absolute bottom-4 right-4 w-3 h-3 bg-green-400 rounded animate-bounce" style="animation-delay: 0.5s;"></div>
+                            <div class="absolute top-1/2 left-8 w-2 h-2 bg-green-600 rounded animate-bounce" style="animation-delay: 1s;"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-display font-bold text-gray-900 mb-4">Jeu Snake</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Recréation du classique jeu Snake en Python avec PyGame. Ce projet m'a permis
+                                d'approfondir mes connaissances en programmation de jeux, gestion des événements,
+                                et logique de collision. Interface graphique moderne avec système de score.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="font-semibold text-gray-900 mb-3">Fonctionnalités :</h4>
+                                <ul class="text-gray-600 space-y-1">
+                                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Contrôles fluides au clavier</li>
+                                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Système de score</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Python</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">PyGame</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Game Logic</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/papaaboumbaye/Jeu-Snake-perso" class="flex-1 inline-flex items-center justify-center px-4 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-md">
+                                    <i class="fab fa-github mr-2"></i>
+                                    <span>Code Source</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests & Hobbies Section -->
+    <section class="section bg-gradient-to-br from-gray-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl font-display font-bold gradient-text mb-4">Centres d'Intérêt</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Au-delà du code, découvrez ce qui me passionne et m'inspire au quotidien
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl text-center animate-slide-up">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Cuisine</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Passionné par la nourriture, j'aime faire des gateaux et des plats en tout genre.
+                    </p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gamepad text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Gaming</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Les jeux vidéo m'aident à me divertir.
+                    </p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Musique</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Le rythme m'accompagne tout au long de ma vie.
+                    </p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-center animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Dessin</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Le dessin me permet d'exprimer ma créativité, mon goût pour l'esthétisme, et la technique.
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-center animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-running text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Sport</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Le sport m'aide à me défouler, me dépenser, et me pousse au meilleur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="hero-bg py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-white mb-6">
+                    Travaillons Ensemble !
+                </h2>
+                <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                    Vous recherchez un stagiaire ? Je serais ravi de discuter avec vous.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="index.html#contact" class="inline-flex items-center px-8 py-3 bg-white text-primary-700 font-semibold rounded-full hover:bg-primary-50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <span>Me contacter</span>
+                        <i class="fas fa-envelope ml-2"></i>
+                    </a>
+                    <a href="index.html#projets" class="inline-flex items-center px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-primary-700 transform hover:scale-105 transition-all duration-300">
+                        <span>Voir mes projets</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2025 Papa Abou MBAYE. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mobileMenu && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/95');
+                navbar.classList.remove('bg-white/90');
+            } else {
+                navbar.classList.add('bg-white/90');
+                navbar.classList.remove('bg-white/95');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up, .animate-slide-in-left, .animate-slide-in-right').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            observer.observe(el);
+        });
+
+        // Animate skill progress bars on scroll
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.classList.contains('w-[85%]') ? '85%' :
+                                         bar.classList.contains('w-[80%]') ? '80%' :
+                                         bar.classList.contains('w-[75%]') ? '75%' :
+                                         bar.classList.contains('w-[90%]') ? '90%' :
+                                         bar.classList.contains('w-[70%]') ? '70%' : '75%';
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const skillSection = document.querySelector('.glass-card');
+        if (skillSection) {
+            skillObserver.observe(skillSection);
+        }
+    </script>
+</body>
+</html>

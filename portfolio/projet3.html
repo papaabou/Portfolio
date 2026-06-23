@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Projet BDD</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+      <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300" id="navbar">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-between items-center h-16">
+                  <!-- Logo -->
+                  <div class="flex-shrink-0">
+                      <a href="#accueil" class="flex items-center space-x-2 group">
+                          <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border border-gray-200">
+                          <img src = "./img/Logo.png" class="w-8 h-8 object-contain"/>
+                          </div>
+                          <span class="font-display font-semibold text-gray-900 hidden sm:block">Papa Abou MBAYE</span>
+                      </a>
+                  </div>
+                  
+                  <!-- Desktop Navigation -->
+                  <div class="hidden md:block">
+                      <div class="ml-10 flex items-baseline space-x-8">
+                          <a href="#accueil" class="nav-link text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">Accueil</a>
+                          <a href="#competences" class="nav-link text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">Compétences</a>
+                          <a href="#projets" class="nav-link text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">Projets</a>
+                          <a href="#apropos" class="nav-link text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">À propos</a>
+                          <a href="#contact" class="nav-link text-gray-700 hover:text-sky-600 px-3 py-2 text-sm font-medium">Contact</a>
+                      </div>
+                  </div>
+                  
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden">
+                      <button type="button" class="mobile-menu-btn text-gray-700 hover:text-sky-600 focus:outline-none focus:text-sky-600 transition-colors duration-200" aria-label="Menu">
+                          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Mobile Navigation -->
+          <div class="mobile-menu md:hidden fixed top-16 right-0 w-64 h-screen bg-white shadow-xl border-l border-gray-200">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a href="#accueil" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Accueil</a>
+                  <a href="#competences" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Compétences</a>
+                  <a href="#projets" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Projets</a>
+                  <a href="#apropos" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md transition-colors duration-200">À propos</a>
+                  <a href="#contact" class="mobile-nav-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-sky-600 hover:bg-gray-50 rounded-md transition-colors duration-200">Contact</a>
+              </div>
+          </div>
+      </nav>  
+    <h1 class="text-2xl font-bold bg-sky-600 text-white rounded-md inline-block px-4 py-2">Conception, creation de Base de Données</h1>
+
+    <section id="mon-parcours" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="bg-white shadow-lg rounded-3xl p-10">
+        <h2 class="text-3xl font-semibold text-gray-900 mb-6">Mon parcours</h2>
+        <p class="text-gray-700 leading-8 mb-4">
+          J’ai commencé mon parcours dans l’enseignement supérieur en génie informatique. Cette première étape m’a permis de poser des bases scientifiques et techniques solides, en consolidant ma méthode de travail et ma rigueur d’analyse.
+        </p>
+        <p class="text-gray-700 leading-8 mb-4">
+          J’ai ensuite intégré le BUT Informatique à l’IUT de Villetaneuse (Université Sorbonne Paris Nord), où j’ai consolidé mes compétences en développement logiciel, bases de données et gestion de projet.
+        </p>
+        <p class="text-gray-700 leading-8 mb-4">
+          Au fil des projets et des SAE, mon parcours s’est enrichi et m’a permis de renforcer mes compétences en développement logiciel, bases de données, développement web et travail en équipe. Ces expériences m’ont aidé à développer mon autonomie, ma rigueur et mon ouverture à de nouvelles méthodes de travail.
+        </p>
+        <p class="text-gray-700 leading-8">
+          Aujourd’hui, je souhaite poursuivre mes études dans le domaine des systèmes embarqués et de l’intelligence artificielle embarquée, notamment à travers une poursuite d’études en école d’ingénieurs.
+        </p>
+      </div>
+    </section>
+
+    <section id="timeline" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <div class="bg-slate-50 rounded-3xl shadow-lg p-10">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
+          <div>
+            <h2 class="text-3xl font-semibold text-gray-900">Timeline académique</h2>
+            <p class="mt-3 text-gray-600 max-w-2xl">Un aperçu visuel de mon évolution depuis mes premières études en génie informatique jusqu’à mes ambitions en ingénierie embarquée.</p>
+          </div>
+        </div>
+        <div class="relative border-l-2 border-sky-500 pl-8">
+          <div class="mb-10 ml-0 md:ml-6 relative">
+            <span class="absolute -left-5 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-sky-600 text-white ring-8 ring-white">1</span>
+            <div class="bg-white border border-gray-200 rounded-3xl p-6 shadow-sm">
+              <p class="text-sm text-sky-600 font-semibold">2023 - 2024</p>
+              <h3 class="mt-2 text-xl font-semibold text-gray-900">Formation initiale en génie informatique</h3>
+              <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Découverte approfondie de l'informatique et des sciences de l'ingénieur.</li>
+                <li>Acquisition des bases en algorithmique et programmation.</li>
+                <li>Développement de méthodes de travail rigoureuses.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-10 ml-0 md:ml-6 relative">
+            <span class="absolute -left-5 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-sky-600 text-white ring-8 ring-white">2</span>
+            <div class="bg-white border border-gray-200 rounded-3xl p-6 shadow-sm">
+              <p class="text-sm text-sky-600 font-semibold">2024 - 2026</p>
+              <h3 class="mt-2 text-xl font-semibold text-gray-900">BUT Informatique</h3>
+              <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Adaptation à un nouvel environnement universitaire.</li>
+                <li>Réalisation de projets et SAE en équipe.</li>
+                <li>Développement d'applications web et logicielles.</li>
+                <li>Acquisition de compétences en bases de données, développement logiciel et gestion de projet.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ml-0 md:ml-6 relative">
+            <span class="absolute -left-5 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-sky-600 text-white ring-8 ring-white">3</span>
+            <div class="bg-white border border-gray-200 rounded-3xl p-6 shadow-sm">
+              <p class="text-sm text-sky-600 font-semibold">Objectif futur</p>
+              <h3 class="mt-2 text-xl font-semibold text-gray-900">Poursuite d'études en ingénierie</h3>
+              <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+                <li>Admission en école d'ingénieurs.</li>
+                <li>Spécialisation en systèmes embarqués.</li>
+                <li>Développement de compétences en intelligence artificielle embarquée.</li>
+                <li>Contribution à des projets innovants dans l'industrie.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2026 Papa Abou MBAYE. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

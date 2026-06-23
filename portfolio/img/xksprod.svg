@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration sombre de studio de production avec console audio">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090b10"/>
+      <stop offset="100%" stop-color="#141c27"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#7affe2" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0c151f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg2)" rx="28"/>
+  <circle cx="320" cy="220" r="160" fill="url(#light)"/>
+  <path d="M220 520 h520 v-220 h-520 z" fill="#0d1520" stroke="#0e4d42" stroke-width="4" rx="28"/>
+  <rect x="260" y="370" width="420" height="92" rx="14" fill="#0c2029"/>
+  <g fill="#0d2430" stroke="#0b5b4f" stroke-width="3">
+    <rect x="292" y="394" width="110" height="56" rx="12"/>
+    <rect x="422" y="394" width="110" height="56" rx="12"/>
+    <rect x="552" y="394" width="110" height="56" rx="12"/>
+  </g>
+  <g fill="#0a1218" stroke="#1ae89b" stroke-width="2">
+    <circle cx="620" cy="180" r="40"/>
+    <path d="M620 220 v80" stroke-linecap="round"/>
+    <path d="M600 240 h40" stroke-linecap="round"/>
+  </g>
+  <path d="M880 160 c-60 0 -80 34 -92 76" fill="none" stroke="#7affe2" stroke-width="8" opacity="0.7"/>
+  <path d="M860 240 c-36 0 -46 28 -56 56" fill="none" stroke="#6fe0bb" stroke-width="8" opacity="0.55"/>
+  <g fill="#0a1218" stroke="#78f8d1" stroke-width="3">
+    <rect x="640" y="460" width="340" height="88" rx="18"/>
+    <rect x="696" y="478" width="68" height="10" rx="5" fill="#0b1922" stroke="none"/>
+    <rect x="776" y="478" width="68" height="10" rx="5" fill="#0b1922" stroke="none"/>
+    <rect x="856" y="478" width="68" height="10" rx="5" fill="#0b1922" stroke="none"/>
+  </g>
+  <g fill="#d7fff1" font-family="Inter, Arial, sans-serif" font-size="32" opacity="0.9">
+    <text x="120" y="120">PROD</text>
+    <text x="120" y="164" font-size="20" fill="#85ffd4">studio</text>
+  </g>
+</svg>
