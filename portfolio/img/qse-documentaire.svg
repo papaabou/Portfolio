@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration d'une bibliotheque documentaire QSE securisee">
+  <defs>
+    <radialGradient id="qseBg" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#0d1a16"/>
+      <stop offset="100%" stop-color="#050b09"/>
+    </radialGradient>
+    <linearGradient id="qseAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#16d9c6"/>
+    </linearGradient>
+    <linearGradient id="qseSheet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1d19"/>
+      <stop offset="100%" stop-color="#0a1512"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#qseBg)" rx="30"/>
+
+  <!-- grille de fond -->
+  <g stroke="#123028" stroke-width="1" opacity="0.55">
+    <path d="M0 180H1200M0 360H1200M0 540H1200"/>
+    <path d="M240 0V720M480 0V720M720 0V720M960 0V720"/>
+  </g>
+
+  <!-- etagere / bibliotheque documentaire -->
+  <g>
+    <rect x="96" y="120" width="620" height="480" rx="26" fill="#08130f" stroke="#12342b" stroke-width="4"/>
+    <rect x="130" y="158" width="552" height="54" rx="14" fill="#0b1c17"/>
+    <circle cx="164" cy="185" r="9" fill="url(#qseAccent)" opacity="0.85"/>
+    <rect x="192" y="176" width="230" height="18" rx="9" fill="#17453a"/>
+    <rect x="566" y="172" width="96" height="26" rx="13" fill="none" stroke="#1d5546" stroke-width="3"/>
+    <text x="614" y="190" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#63f0bb">v2.1</text>
+
+    <!-- fiches -->
+    <g>
+      <rect x="130" y="240" width="258" height="150" rx="18" fill="url(#qseSheet)" stroke="#1b4a3d" stroke-width="3"/>
+      <rect x="158" y="270" width="150" height="14" rx="7" fill="#2a6a58"/>
+      <rect x="158" y="298" width="200" height="10" rx="5" fill="#183b32"/>
+      <rect x="158" y="318" width="176" height="10" rx="5" fill="#183b32"/>
+      <rect x="158" y="348" width="84" height="22" rx="11" fill="#0d2a22" stroke="#1f5c4c" stroke-width="2"/>
+      <text x="200" y="364" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#5ce8b6">FO</text>
+    </g>
+
+    <g>
+      <rect x="424" y="240" width="258" height="150" rx="18" fill="url(#qseSheet)" stroke="#1b4a3d" stroke-width="3"/>
+      <rect x="452" y="270" width="118" height="14" rx="7" fill="#2a6a58"/>
+      <rect x="452" y="298" width="200" height="10" rx="5" fill="#183b32"/>
+      <rect x="452" y="318" width="150" height="10" rx="5" fill="#183b32"/>
+      <rect x="452" y="348" width="84" height="22" rx="11" fill="#0d2a22" stroke="#1f5c4c" stroke-width="2"/>
+      <text x="494" y="364" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#5ce8b6">PR</text>
+    </g>
+
+    <g>
+      <rect x="130" y="418" width="258" height="150" rx="18" fill="url(#qseSheet)" stroke="#1b4a3d" stroke-width="3"/>
+      <rect x="158" y="448" width="168" height="14" rx="7" fill="#2a6a58"/>
+      <rect x="158" y="476" width="200" height="10" rx="5" fill="#183b32"/>
+      <rect x="158" y="496" width="132" height="10" rx="5" fill="#183b32"/>
+      <rect x="158" y="526" width="84" height="22" rx="11" fill="#0d2a22" stroke="#1f5c4c" stroke-width="2"/>
+      <text x="200" y="542" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#5ce8b6">MO</text>
+    </g>
+
+    <g>
+      <rect x="424" y="418" width="258" height="150" rx="18" fill="#0a1a15" stroke="url(#qseAccent)" stroke-width="3"/>
+      <rect x="452" y="448" width="140" height="14" rx="7" fill="#3f8f75"/>
+      <rect x="452" y="476" width="200" height="10" rx="5" fill="#1d4b3f"/>
+      <rect x="452" y="496" width="164" height="10" rx="5" fill="#1d4b3f"/>
+      <circle cx="636" cy="536" r="20" fill="none" stroke="url(#qseAccent)" stroke-width="3"/>
+      <path d="M627 536l6 7 12-14" fill="none" stroke="url(#qseAccent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="452" y="526" width="112" height="22" rx="11" fill="#0d2a22" stroke="#1f5c4c" stroke-width="2"/>
+      <text x="508" y="542" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#5ce8b6">EN VIGUEUR</text>
+    </g>
+  </g>
+
+  <!-- panneau conformite -->
+  <g>
+    <rect x="768" y="120" width="336" height="480" rx="26" fill="#08130f" stroke="#12342b" stroke-width="4"/>
+
+    <path d="M936 186l84 30v82c0 56-36 96-84 114-48-18-84-58-84-114v-82z" fill="#0b1f19" stroke="url(#qseAccent)" stroke-width="4"/>
+    <path d="M910 310l20 22 42-48" fill="none" stroke="url(#qseAccent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="808" y="452" width="256" height="40" rx="12" fill="#0b1c17" stroke="#1b4a3d" stroke-width="2"/>
+    <text x="936" y="478" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#8ff5c8">ISO 9001</text>
+
+    <rect x="808" y="508" width="256" height="40" rx="12" fill="#0b1c17" stroke="#1b4a3d" stroke-width="2"/>
+    <text x="936" y="534" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#8ff5c8">ISO 14001</text>
+
+    <rect x="852" y="152" width="168" height="4" rx="2" fill="#17453a"/>
+  </g>
+</svg>
